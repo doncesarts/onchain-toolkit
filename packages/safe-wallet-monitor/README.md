@@ -83,7 +83,7 @@ yarn global add @onchain-toolkit/safe-wallet-monitor
 ### From source
 
 ```bash
-git clone <repository-url>
+git clone git@github.com:doncesarts/onchain-toolkit.git
 cd onchain-toolkit/packages/safe-wallet-monitor
 npm install
 npm run build

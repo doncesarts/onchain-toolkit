@@ -130,10 +130,6 @@ export async function fetchQueuedTransactions(
   const log = createLogger(debug);
 
   try {
-    const apiUrl = SAFE_API_URLS[chain];
-    if (!apiUrl) {
-      throw new SafeApiError(`Unsupported chain: ${chain}`, safeAddress);
-    }
     const url = `https://safe-client.safe.global/v1/chains/${chainIds[chain]}/safes/${safeAddress}/transactions/queued`;
     log(`Fetching queued transactions for ${safeAddress} on ${chain} \n  ${url}`);
 
