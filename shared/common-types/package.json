@@ -1,0 +1,22 @@
+{
+  "name": "@onchain-toolkit/common-types",
+  "version": "1.0.0",
+  "description": "Shared TypeScript types and interfaces for onchain-toolkit",
+  "author": "doncesarts",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "lint": "echo 'No linting configured for common-types'",
+    "lint:fix": "echo 'No linting configured for common-types'",
+    "format": "prettier --write \"src/**/*.{ts,js,json,md}\"",
+    "format:check": "prettier --check \"src/**/*.{ts,js,json,md}\"",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "tsup": "^7.0.0"
+  }
+}

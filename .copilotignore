@@ -1,0 +1,112 @@
+# GitHub Copilot Ignore File - Root Level
+# Files and patterns listed here will be excluded from GitHub Copilot suggestions
+# This helps prevent sensitive data from being processed by AI across the entire project
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+.envrc
+.environment
+
+# Configuration files with potentially sensitive data
+*.config.json
+*-config.json
+config.json
+secrets.json
+credentials.json
+safe-wallet-monitor.config.json
+
+# API keys and authentication files
+**/api-keys.txt
+**/tokens.txt
+**/.secrets
+**/private-keys.txt
+**/auth-config.*
+**/credentials.*
+**/auth-tokens.*
+
+# Wallet and blockchain sensitive data
+**/wallets/
+**/keys/
+**/mnemonics.txt
+**/seed-phrases.txt
+**/private.key
+**/keystore.json
+**/wallet-*.json
+
+# Communication and notification configs
+**/telegram-config.json
+**/bot-config.json
+**/webhook-config.json
+**/slack-config.json
+**/discord-config.json
+
+# Logs that might contain sensitive data
+*.log
+**/logs/
+**/debug.log
+**/error.log
+**/access.log
+**/monitor.log
+**/cron.log
+
+# Package-specific sensitive configs
+**/packages/*/safe-wallet-monitor.config.json
+**/packages/*/*.config.json
+
+# Personal data and backups
+*.backup
+*.bak
+*.old
+*.orig
+*~
+
+# Any file with sensitive patterns in name
+*secret*
+*private*
+*credential*
+*password*
+*token*
+*key*.json
+*auth*.json
+*sensitive*
+
+# Temporary and cache files
+tmp/
+temp/
+*.tmp
+*.temp
+.cache/
+.parcel-cache/
+.npm/
+.yarn/
+
+# Development and testing sensitive files
+**/test-config.json
+**/dev-config.json
+**/local-config.json
+**/staging-config.json
+**/prod-config.json
+
+# Database and data files
+*.db
+*.sqlite
+*.sqlite3
+data/
+database/
+
+# Certificates and keys
+*.pem
+*.key
+*.cert
+*.crt
+*.p12
+*.pfx
+
+# Docker and deployment with secrets
+docker-compose.override.yml
+.dockerignore
+Dockerfile.prod
+.kubernetes/
+k8s/secrets/

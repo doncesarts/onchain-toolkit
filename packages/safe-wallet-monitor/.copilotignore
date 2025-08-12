@@ -1,0 +1,76 @@
+# GitHub Copilot Ignore File
+# Files and patterns listed here will be excluded from GitHub Copilot suggestions
+# This helps prevent sensitive data from being processed by AI
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+.envrc
+.environment
+
+# Configuration files with potentially sensitive data
+*.config.json
+*-config.json
+config.json
+secrets.json
+credentials.json
+safe-wallet-monitor.config.json
+
+# API keys and authentication
+**/api-keys.txt
+**/tokens.txt
+**/.secrets
+**/private-keys.txt
+**/auth-config.*
+**/credentials.*
+
+# Wallet and blockchain sensitive data
+**/wallets/
+**/keys/
+**/mnemonics.txt
+**/seed-phrases.txt
+**/private.key
+**/keystore.json
+
+# Telegram and communication configs
+telegram-config.json
+bot-config.json
+webhook-config.json
+
+# Logs that might contain sensitive data
+*.log
+logs/
+debug.log
+error.log
+access.log
+monitor.log
+cron.log
+
+# Personal data and backups
+*.backup
+*.bak
+*.old
+*.orig
+
+# Any file with sensitive patterns in name
+*secret*
+*private*
+*credential*
+*password*
+*token*
+*key*.json
+*auth*.json
+
+# Temporary and cache files that might contain data
+tmp/
+temp/
+*.tmp
+*.temp
+.cache/
+.parcel-cache/
+
+# Development and testing files
+test-config.json
+dev-config.json
+local-config.json

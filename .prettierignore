@@ -1,0 +1,45 @@
+# Build outputs
+dist/
+build/
+node_modules/
+
+# Logs
+*.log
+logs/
+
+# Configuration files that may contain sensitive data
+*.config.json
+.env
+.env.*
+
+# Package manager files
+package-lock.json
+yarn.lock
+
+# Coverage reports
+coverage/
+
+# Cache directories
+.cache/
+.parcel-cache/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+tmp/
+temp/
+
+# Git files
+.git/
+.gitignore
+
+# Security files
+.copilotignore
+
+# IDE files
+.vscode/
+.idea/

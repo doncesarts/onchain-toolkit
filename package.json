@@ -1,0 +1,32 @@
+{
+  "name": "onchain-toolkit",
+  "version": "0.0.1",
+  "description": "A comprehensive suite of utilities to streamline blockchain operations",
+  "author": "doncesarts",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "shared/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces",
+    "lint": "npm run lint --workspaces",
+    "lint:fix": "npm run lint:fix --workspaces",
+    "format": "npm run format --workspaces",
+    "format:check": "npm run format:check --workspaces",
+    "clean": "npm run clean --workspaces",
+    "dev": "npm run dev --workspaces"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0",
+    "tsup": "^7.0.0",
+    "vitest": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
